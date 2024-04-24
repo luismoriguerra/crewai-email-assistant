@@ -1,0 +1,35 @@
+venv/bin/python src/main.py
+ [DEBUG]: == Working Agent: email classifier
+ [INFO]: == Starting Task: Classify the email: hey, your neighbor john here , your house seems to be on fire, you should probably check it out
+
+
+> Entering new CrewAgentExecutor chain...
+Thought: This email is quite alarming and urgent, it's not a typical casual or spam email, it seems to be a genuine concern from a neighbor about a serious issue with the recipient's house.
+
+Final Answer: important
+
+> Finished chain.
+ [DEBUG]: == [email classifier] Task output: important
+
+
+ [DEBUG]: == Working Agent: email responder
+ [INFO]: == Starting Task: Respond to the email: hey, your neighbor john here , your house seems to be on fire, you should probably check it out based on the importance provided by the  classifier agent.
+
+
+> Entering new CrewAgentExecutor chain...
+Thought: I understand the importance of this email and the need for a concise and formal response.
+
+Final Answer: Dear John, Thank you for alerting me to the emergency. I will investigate immediately.
+
+> Finished chain.
+ [DEBUG]: == [email responder] Task output: Dear John, Thank you for alerting me to the emergency. I will investigate immediately.
+
+
+Dear John, Thank you for alerting me to the emergency. I will investigate immediately.
+Output saved in output/hey,_your_neighbor_john_here_,_your_house_seems_to_be_on_fire,_you_should_probably_check_it_out.txt
+(venv) 
+
+
+
+### Output
+Dear John, Thank you for alerting me to the emergency. I will investigate immediately.
