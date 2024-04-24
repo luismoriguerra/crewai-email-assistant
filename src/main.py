@@ -56,10 +56,3 @@ os.makedirs(os.path.dirname(output_file), exist_ok=True)
 with open(output_file, "w") as f:
     f.write(str(output))
 print(f"Output saved in {output_file}")
-
-# # Save the output to a file
-# with open("output.txt", "w") as file:
-#     file.write(str(output))
-
-# # Optionally, print a message indicating that the output has been saved
-# print("Output has been saved to output.txt.")
